@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 009</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Sistema de pais</h1>
     <p>De qual país você é  <input type="text" name="pais" id="pais"></p>
-    <div class="caixa">
-        <input type="button" value="Verificar" onclick="calcular()">
-    </div>
+    <input type="button" value="Verificar" onclick="calcular()">
     <div id="res">
 
     </div>
@@ -19,7 +16,7 @@
         function calcular() {
           var pais = document.querySelector('input#pais')
           var res = document.querySelector('div#res')
-          var país = 'EUA'
+          var país = 'BRASIL'
           console.log(`Vivendo em ${país}`)
             if(país == 'Brasil'){
                 res.innerHTML += `Você é Brasileiro`
