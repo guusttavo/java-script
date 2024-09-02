@@ -16,12 +16,12 @@
         function calcular() {
           var pais = document.querySelector('input#pais')
           var res = document.querySelector('div#res')
-          var país = 'BRASIL'
+          var país = 'EUA'
           console.log(`Vivendo em ${país}`)
             if(país == 'Brasil'){
-                res.innerHTML += `Você é Brasileiro`
+                res.innerHTML += `Você é Brasileiro ${pais}`
             } else{
-                res.innerHTML += `Você é Estrangeiro`
+                res.innerHTML += `Você é Estrangeiro ${pais}`
             }
          }
      </script>

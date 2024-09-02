@@ -20,7 +20,7 @@ p{
 }
 
 
-.caixa{
+div{
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -29,3 +29,7 @@ p{
     margin: 30px;
 }
 
+div > #verificar{
+    width: 100px;
+
+}

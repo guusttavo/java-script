@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Sistema de Multas</h1>
     <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h</p>
-    <input type="button" value="Verificar" onclick="calcular()">
+    <div class="resultado"><input type="button" value="Verificar" onclick="calcular()" id="verificar"></div>
     <div id="res">
 
     </div>
@@ -18,11 +18,11 @@
          var txtv = document.querySelector('input#txtvel')
          var res = document.querySelector('div#res')
          var vel = Number (txtv.value)
-         res.innerHTML = `<p> Sua velocidade atual é de ${vel} km/h </p>`
+            res.innerHTML = `<p> Sua velocidade atual é de ${vel} km/h </p>`
          if (vel > 60 ) {
             res.innerHTML += `<p> Você está <strong>MULTADO</strong> por execesso de velocidade` 
          } else {
-         res.innerHTML += `<p> Dirija sempre com sinto de segunraça!`
+            res.innerHTML += `<p> Dirija sempre com sinto de segunraça!`
          }
         }
     </script>
